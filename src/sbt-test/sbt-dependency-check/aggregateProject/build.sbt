@@ -26,7 +26,7 @@ lazy val util = (project in file("util"))
 lazy val core = project.dependsOn(util)
   .settings(commonSettings: _*)
   .settings(
-    libraryDependencies += "org.apache.commons" % "commons-collections4" % "4.1"
+    libraryDependencies += "org.apache.commons" % "commons-collections4" % "4.5.0"
   )
 
 lazy val ignore = (project in file("ignore"))

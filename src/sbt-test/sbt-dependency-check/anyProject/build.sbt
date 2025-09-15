@@ -14,7 +14,7 @@ lazy val root = (project in file("."))
 lazy val core = (project in file("core"))
   .settings(commonSettings: _*)
   .settings(
-    libraryDependencies += "org.apache.commons" % "commons-collections4" % "4.1"
+    libraryDependencies += "org.apache.commons" % "commons-collections4" % "4.5.0"
   )
 
 lazy val inScope = (project in file("inScope"))
