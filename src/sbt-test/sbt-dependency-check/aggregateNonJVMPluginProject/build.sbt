@@ -4,7 +4,7 @@ name := "dependency-check-repro"
 
 version := "0.1"
 
-scalaVersion := "2.11.12"
+scalaVersion := "2.13.18"
 
 dependencyCheckAutoUpdate := Some(false)
 

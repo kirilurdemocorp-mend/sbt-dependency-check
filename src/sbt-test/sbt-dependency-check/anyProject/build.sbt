@@ -1,7 +1,7 @@
 lazy val commonSettings = Seq(
   organization := "net.vonbuchholtz",
   version := "0.1.0",
-  scalaVersion := "2.10.7"
+  scalaVersion := "2.13.18"
 )
 
 lazy val root = (project in file("."))
@@ -14,11 +14,11 @@ lazy val root = (project in file("."))
 lazy val core = (project in file("core"))
   .settings(commonSettings: _*)
   .settings(
-    libraryDependencies += "org.apache.commons" % "commons-collections4" % "4.1"
+    libraryDependencies += "org.apache.commons" % "commons-collections4" % "4.5.0"
   )
 
 lazy val inScope = (project in file("inScope"))
   .settings(commonSettings: _*)
   .settings(
-    libraryDependencies += "com.fasterxml.jackson.core" % "jackson-databind"  % "2.9.9"
+    libraryDependencies += "com.fasterxml.jackson.core" % "jackson-databind"  % "2.20.1"
   )
