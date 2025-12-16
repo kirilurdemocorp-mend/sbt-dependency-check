@@ -8,7 +8,7 @@ lazy val root = (project in file("."))
   .aggregate(core)
   .settings(commonSettings: _*)
   .settings(
-    libraryDependencies += "org.eclipse.jetty" % "jetty-runner" % "9.2.4.v20141103" % "provided",
+    libraryDependencies += "org.eclipse.jetty" % "jetty-runner" % "11.0.26" % "provided",
     dependencyCheckSkipTestScope := false
   )
 
